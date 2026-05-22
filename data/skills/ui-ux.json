@@ -1,0 +1,97 @@
+{
+  "slug": "ui-ux",
+  "title": "UI/UX设计技能图谱",
+  "direction": "ui-ux",
+  "description": "UI/UX设计师负责数字产品的界面视觉设计和用户体验。需要兼顾美学、易用性和商业价值。",
+  "suitableUsers": "视觉传达、数字媒体、交互设计等专业的学生，以及对互联网产品设计感兴趣的设计类学生。",
+  "baseSkills": [
+    { "name": "版式设计", "level": "入门", "description": "掌握网格系统、视觉层次、信息架构" },
+    { "name": "色彩理论", "level": "入门", "description": "色彩心理学、配色原则、色彩搭配" },
+    { "name": "字体设计", "level": "入门", "description": "字体选择、字重运用、排版规则" },
+    { "name": "图标设计", "level": "基础", "description": "线性图标、面性图标、图标风格统一" },
+    { "name": "设计规范", "level": "基础", "description": "了解iOS和Android设计规范基础" }
+  ],
+  "jobReadySkills": [
+    { "name": "Figma", "level": "核心", "importance": "必须精通，行业标准工具", "description": "原型设计、界面设计、团队协作" },
+    { "name": "界面设计", "level": "核心", "importance": "必须掌握", "description": "APP界面、Web界面、设计系统" },
+    { "name": "交互设计", "level": "核心", "importance": "必须掌握", "description": "用户流程、页面跳转、交互逻辑" },
+    { "name": "设计规范", "level": "核心", "importance": "必须掌握", "description": "iOS Human Interface Guidelines、Android Material Design" },
+    { "name": "Sketch", "level": "可选", "importance": "Mac用户推荐", "description": "UI设计工具，Figma的替代品" },
+    { "name": "动效设计", "level": "进阶", "importance": "面试加分项", "description": "Principle、After Effects动效" }
+  ],
+  "bonusSkills": [
+    "After Effects动效设计",
+    "Principle/Figma Prototyping",
+    "Lottie动画",
+    "Blender三维图标",
+    "HTML/CSS基础",
+    "用户研究方法",
+    "数据分析基础",
+    "设计系统思维"
+  ],
+  "tools": [
+    {
+      "category": "设计工具",
+      "items": [
+        { "name": "Figma", "priority": "必学" },
+        { "name": "Sketch", "priority": "Mac推荐" },
+        { "name": "Adobe XD", "priority": "可选" },
+        { "name": "Photoshop", "priority": "辅助" }
+      ]
+    },
+    {
+      "category": "原型工具",
+      "items": [
+        { "name": "Figma Prototyping", "priority": "必学" },
+        { "name": "Principle", "priority": "推荐" },
+        { "name": "ProtoPie", "priority": "进阶" },
+        { "name": "Axure", "priority": "可选" }
+      ]
+    },
+    {
+      "category": "动效工具",
+      "items": [
+        { "name": "After Effects", "priority": "推荐" },
+        { "name": "Lottie", "priority": "加分" },
+        { "name": "Framer", "priority": "进阶" }
+      ]
+    }
+  ],
+  "portfolioRequirements": [
+    "至少2套完整APP界面设计，包含启动页、首页、个人中心等核心页面",
+    "展示设计规范/组件库，体现系统化设计思维",
+    "每个项目包含设计背景、用户画像、设计决策说明",
+    "如果有动效设计一定要演示",
+    "包含1-2个PC端/Web端设计作品更佳"
+  ],
+  "commonMistakes": [
+    "作品集只有视觉没有交互思考",
+    "不了解iOS/Android设计规范基础",
+    "图标风格不统一，大小比例混乱",
+    "排版不规范，间距不统一",
+    "缺少设计过程，只展示最终界面",
+    "不了解设计组件化和设计系统概念"
+  ],
+  "learningPath": [
+    {
+      "stage": "大一-大二基础期",
+      "goals": ["学习平面设计基础", "掌握PS/AI基础操作", "了解设计史和优秀产品", "培养审美能力"],
+      "duration": "2年"
+    },
+    {
+      "stage": "大二-大三技能期",
+      "goals": ["精通Figma", "学习iOS/Android设计规范", "完成APP界面设计项目", "学习交互设计基础"],
+      "duration": "1-2年"
+    },
+    {
+      "stage": "大三-大四实战期",
+      "goals": ["参加设计竞赛", "寻找UI/UX实习", "完善作品集", "准备秋招/春招"],
+      "duration": "1-2年"
+    },
+    {
+      "stage": "毕业后持续学习",
+      "goals": ["关注设计趋势", "学习动效和交互进阶", "培养用户体验思维", "建立个人设计方法论"],
+      "duration": "终身"
+    }
+  ]
+}

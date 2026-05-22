@@ -1,0 +1,206 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-21",
+  "description": "设计星图 MVP 1.0 - 免费资料包（面向设计类学生）",
+  "resources": [
+    {
+      "id": "res-001",
+      "slug": "design-internship-guide",
+      "title": "设计实习通关指南",
+      "subtitle": "从简历到作品集到面试的完整攻略",
+      "intro": "一份专为设计类学生整理的实习求职全流程指南，覆盖简历撰写、作品集搭建、面试准备三大环节，帮你少走弯路。",
+      "targetAudience": "大三/大四/研一/研二，正在找设计实习或校招的学生",
+      "includes": [
+        "简历模板（工业设计/UIUX/品牌三个方向）",
+        "作品集结构框架PDF",
+        "30道常见面试题及回答思路",
+        "50家设计公司/互联网设计岗投递清单",
+        "作品集自检清单"
+      ],
+      "howToGet": {
+        "method": "关注公众号后回复关键词",
+        "detail": "关注「设计星图」公众号，回复'实习指南'即可领取",
+        "note": "资料包持续更新，建议收藏"
+      },
+      "guideCopy": {
+        "headline": "投了50份简历都没回音？可能是方法不对",
+        "body": "我们整理了100+位设计学长学姐的求职经验，提炼出这份《设计实习通关指南》。从简历怎么写到作品集怎么排，从面试怎么讲到怎么谈薪，全流程覆盖。不是泛泛而谈，是每一步都有模板和清单。",
+        "cta": "回复'实习指南'，免费领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-002",
+      "slug": "portfolio-templates",
+      "title": "作品集排版模板包",
+      "subtitle": "5套可直接使用的作品集排版模板",
+      "intro": "作品集排版是设计基本功的体现。我们整理了5套不同风格的排版模板，覆盖工业设计和UI/UX两个方向，可直接在Figma/Keynote/AI中编辑使用。",
+      "targetAudience": "正在准备作品集的设计专业学生",
+      "includes": [
+        "工业设计作品集模板（横版，适合PDF导出）",
+        "UI/UX作品集模板（适合个人网站/Notion）",
+        "品牌设计作品集模板（横版，视觉导向）",
+        "通用作品集封面模板5款",
+        "作品集配色方案推荐（10组）"
+      ],
+      "howToGet": {
+        "method": "加入社群后领取",
+        "detail": "添加小助手微信，备注'模板'，加入设计星图学生社群后领取",
+        "note": "模板仅供学习参考，请勿直接用于商业用途"
+      },
+      "guideCopy": {
+        "headline": "作品集排版总不满意？试试这些模板",
+        "body": "好的内容需要好的呈现。我们找了5位已经拿到大厂offer的学长学姐，把他们的作品集排版逻辑提炼成模板。不是让你照抄，是让你理解'为什么这样排'。工业设计和UI/UX都有覆盖。",
+        "cta": "加小助手微信，备注'模板'领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-003",
+      "slug": "design-tools-cheat-sheet",
+      "title": "设计工具速查手册",
+      "subtitle": "常用设计软件的快捷键和核心功能速查",
+      "intro": "整理了Rhino、KeyShot、Figma、Photoshop、Illustrator、Blender等6款设计常用软件的快捷键速查表和核心功能导航，帮你快速上手和提效。",
+      "targetAudience": "设计专业学生，尤其是软件学习阶段的同学",
+      "includes": [
+        "Rhino常用命令速查表",
+        "KeyShot渲染参数推荐",
+        "Figma快捷键大全+组件使用指南",
+        "Photoshop图层/蒙版/调色核心操作",
+        "Illustrator路径/形状/文字操作速查",
+        "Blender基础操作导航"
+      ],
+      "howToGet": {
+        "method": "直接下载",
+        "detail": "访问设计星图官网资源页，无需注册直接下载PDF",
+        "note": "建议打印出来贴在工位旁"
+      },
+      "guideCopy": {
+        "headline": "还在一个个菜单找功能？这份速查表帮你省50%时间",
+        "body": "我们整理了6款设计必备软件的快捷键和核心功能速查表。不是大而全的说明书，是'最常用的20%功能'的速查。打印出来贴旁边，用一周就能形成肌肉记忆。",
+        "cta": "官网资源页直接下载，无需注册"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-004",
+      "slug": "company-research-kit",
+      "title": "目标公司研究工具包",
+      "subtitle": "帮你系统性研究目标公司的模板和方法",
+      "intro": "投递简历前做好公司研究，是提升面试通过率的关键。这个工具包提供公司研究的框架、模板和案例，帮你快速了解一家公司的产品、设计、文化和岗位需求。",
+      "targetAudience": "准备投递简历和面试的设计专业学生",
+      "includes": [
+        "公司研究框架（产品/设计/文化/团队四个维度）",
+        "公司研究笔记模板（Notion/飞书文档）",
+        "5家典型公司的研究案例示范",
+        "面试前必查清单",
+        "行业报告获取渠道整理"
+      ],
+      "howToGet": {
+        "method": "关注公众号后回复关键词",
+        "detail": "关注「设计星图」公众号，回复'公司研究'即可领取",
+        "note": "建议每投一家公司前都用这个模板做一次研究"
+      },
+      "guideCopy": {
+        "headline": "面试官问'你了解我们公司吗'，别再说'了解一点'",
+        "body": "我们做了一个公司研究工具包，从产品、设计、文化、团队四个维度帮你系统性了解目标公司。附5家典型公司的研究案例，看完你就知道'研究到什么程度'才够。",
+        "cta": "回复'公司研究'，免费领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-005",
+      "slug": "design-reading-list",
+      "title": "设计学生必读书单",
+      "subtitle": "50本设计类书籍推荐，附阅读优先级",
+      "intro": "整理了50本适合设计学生阅读的书籍，覆盖设计思维、方法论、工具、商业、心理学五个类别，每本标注了优先级和适合阶段，帮你建立系统的知识框架。",
+      "targetAudience": "想系统学习设计知识的设计专业学生",
+      "includes": [
+        "设计思维类（10本）",
+        "方法论类（10本）",
+        "工具技能类（10本）",
+        "商业认知类（10本）",
+        "心理学/用户研究类（10本）",
+        "每本书的优先级标注和阅读建议"
+      ],
+      "howToGet": {
+        "method": "关注公众号后回复关键词",
+        "detail": "关注「设计星图」公众号，回复'书单'即可领取",
+        "note": "书单持续更新，欢迎推荐好书"
+      },
+      "guideCopy": {
+        "headline": "设计学生该读什么书？这份书单帮你省掉盲目摸索",
+        "body": "我们问了20位大厂设计师学长学姐，整理出这份50本书的推荐清单。不是堆砌书名，是标注了'大几读'、'优先级'、'为什么读'。从设计思维到商业认知，帮你建立完整的知识框架。",
+        "cta": "回复'书单'，免费领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-006",
+      "slug": "aigc-design-starter",
+      "title": "AIGC设计入门工具包",
+      "subtitle": "AI辅助设计的工具、Prompt模板和学习路径",
+      "intro": "AIGC正在改变设计行业。这个工具包为设计学生整理了AI图像生成的入门路径、Prompt模板库、常用工具清单和学习资源，帮你快速上手AI辅助设计。",
+      "targetAudience": "对AIGC设计感兴趣、想学习AI辅助设计的学生",
+      "includes": [
+        "AIGC设计学习路径图",
+        "Midjourney Prompt模板库（100+条）",
+        "Stable Diffusion安装和基础使用指南",
+        "ControlNet常用控制方式说明",
+        "AI生成+后期精修的工作流示例",
+        "版权合规使用指南"
+      ],
+      "howToGet": {
+        "method": "加入AIGC设计社群领取",
+        "detail": "添加小助手微信，备注'AIGC'，加入AIGC设计学习社群后领取",
+        "note": "社群内有定期分享和答疑"
+      },
+      "guideCopy": {
+        "headline": "AI不会取代设计师，但会用AI的设计师会取代不会用的",
+        "body": "我们整理了一份AIGC设计入门工具包，从工具安装到Prompt写法到工作流搭建，全流程覆盖。不是让你变成AI专家，是让你把AI变成设计工具箱里的一个趁手工具。",
+        "cta": "加小助手微信，备注'AIGC'领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    },
+    {
+      "id": "res-007",
+      "slug": "salary-transparency-report",
+      "title": "设计岗位薪资透明报告（样例版）",
+      "subtitle": "基于公开信息整理的设计岗位薪资参考",
+      "intro": "整理了设计类岗位在不同城市、不同公司类型、不同经验阶段的薪资范围参考，基于招聘网站公开信息和行业调研，供学生了解市场行情和设定合理预期。",
+      "targetAudience": "想了解设计行业薪资水平、设定求职预期的学生",
+      "includes": [
+        "各方向岗位薪资范围（实习/应届/1-3年）",
+        "一线城市vs新一线城市对比",
+        "不同公司类型薪资特点",
+        "薪资构成说明（ base + 绩效 + 期权等）",
+        "谈薪技巧和注意事项"
+      ],
+      "howToGet": {
+        "method": "关注公众号后回复关键词",
+        "detail": "关注「设计星图」公众号，回复'薪资'即可领取",
+        "note": "数据基于公开信息整理，仅供参考，个体差异较大"
+      },
+      "guideCopy": {
+        "headline": "设计岗到底能拿多少？这份报告给你真实参考",
+        "body": "我们基于招聘网站公开信息和行业调研，整理了一份设计岗位薪资透明报告。不是制造焦虑，是帮你设定合理预期、了解薪资构成、学会谈薪。数据覆盖一线和新一线城市，实习到3年经验都有。",
+        "cta": "回复'薪资'，免费领取"
+      },
+      "downloadUrl": "",
+      "formUrl": "https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS",
+      "qrCodeImage": ""
+    }
+  ]
+}
