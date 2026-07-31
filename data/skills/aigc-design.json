@@ -1,0 +1,104 @@
+{
+  "slug": "aigc-design",
+  "title": "AIGC设计技能图谱",
+  "direction": "aigc-design",
+  "description": "AIGC设计师利用人工智能工具辅助设计创作，提高设计效率和质量。需要掌握AI工具和设计基础的双重能力。",
+  "suitableUsers": "对AI设计工具感兴趣的设计专业学生，愿意探索新领域、持续学习新技术的设计学生。",
+  "baseSkills": [
+    { "name": "AI绘图基础", "level": "入门", "description": "了解Midjourney、Stable Diffusion等工具" },
+    { "name": "提示词工程", "level": "入门", "description": "编写有效提示词控制AI生成结果" },
+    { "name": "设计基础", "level": "入门", "description": "构图、色彩、造型等设计基础" },
+    { "name": "图像处理", "level": "基础", "description": "PS基础，图片后期处理" },
+    { "name": "版权意识", "level": "基础", "description": "AI生成内容的版权问题了解" }
+  ],
+  "jobReadySkills": [
+    { "name": "Midjourney", "level": "核心", "importance": "必须熟练", "description": "AI图像生成，风格控制，质量优化" },
+    { "name": "Stable Diffusion", "level": "核心", "importance": "推荐掌握，可控性更强", "description": "本地部署，Lora训练，ControlNet控制" },
+    { "name": "Photoshop", "level": "核心", "importance": "必须掌握", "description": "AI生成内容的后期处理和优化" },
+    { "name": "提示词优化", "level": "核心", "importance": "必须掌握", "description": "中英文提示词撰写，参数调整" },
+    { "name": "ControlNet", "level": "进阶", "importance": "进阶必备", "description": "精准控制AI生成结果的构图和姿势" },
+    { "name": "Lora训练", "level": "进阶", "importance": "高阶加分项", "description": "训练自定义风格模型" }
+  ],
+  "bonusSkills": [
+    "SD WebUI/ComfyUI工作流",
+    "ChatGPT提示词工程",
+    "AI视频生成（Sora、Runway）",
+    "AI音乐/音效生成",
+    "Blender 3D辅助AI",
+    "设计工作流优化",
+    "AI版权和法律知识",
+    "AI模型训练基础"
+  ],
+  "tools": [
+    {
+      "category": "AI图像生成",
+      "items": [
+        { "name": "Midjourney", "priority": "必学" },
+        { "name": "Stable Diffusion", "priority": "推荐" },
+        { "name": "DALL-E 3", "priority": "可选" },
+        { "name": "Adobe Firefly", "priority": "关注" }
+      ]
+    },
+    {
+      "category": "AI控制工具",
+      "items": [
+        { "name": "ControlNet", "priority": "必学" },
+        { "name": "LoRA", "priority": "进阶" },
+        { "name": "ControlNet预处理器", "priority": "必学" }
+      ]
+    },
+    {
+      "category": "后期处理",
+      "items": [
+        { "name": "Photoshop", "priority": "必学" },
+        { "name": "Lightroom", "priority": "可选" },
+        { "name": "Topaz系列", "priority": "推荐" }
+      ]
+    },
+    {
+      "category": "AI视频",
+      "items": [
+        { "name": "Sora", "priority": "关注" },
+        { "name": "Runway", "priority": "关注" },
+        { "name": "Pika", "priority": "关注" }
+      ]
+    }
+  ],
+  "portfolioRequirements": [
+    "展示AI辅助设计的完整案例，从AI生成到后期处理的完整流程",
+    "包含不同风格、不同应用场景的作品",
+    "展示AI工具的使用技巧和参数调整思路",
+    "有前后对比，展示AI辅助前后的效率和质量提升",
+    "总结AI工具使用的经验和心得"
+  ],
+  "commonMistakes": [
+    "只展示AI生成的图，没有后期处理",
+    "不了解AI工具的局限性，生成的图有明显错误",
+    "版权意识薄弱，使用有争议的模型或素材",
+    "过度依赖AI，缺乏原创设计能力",
+    "提示词写得混乱，不成体系",
+    "不了解AI生成图的常见问题（如手部、文字错误）"
+  ],
+  "learningPath": [
+    {
+      "stage": "入门期（1-2个月）",
+      "goals": ["注册并熟悉Midjourney", "学习基础提示词写法", "完成第一批AI生成作品", "了解AI生成的基本规则"],
+      "duration": "1-2个月"
+    },
+    {
+      "stage": "进阶期（3-6个月）",
+      "goals": ["学习Stable Diffusion本地部署", "掌握ControlNet控制", "学习PS后期处理技巧", "完成10+完整案例"],
+      "duration": "3-6个月"
+    },
+    {
+      "stage": "高阶期（6-12个月）",
+      "goals": ["学习Lora训练", "建立个人AI工作流", "探索AI视频工具", "形成AI辅助设计方法论"],
+      "duration": "6-12个月"
+    },
+    {
+      "stage": "持续学习",
+      "goals": ["关注AI工具更新", "学习新模型新技术", "探索AI在各设计领域的应用", "培养AI+设计的核心竞争力"],
+      "duration": "终身"
+    }
+  ]
+}

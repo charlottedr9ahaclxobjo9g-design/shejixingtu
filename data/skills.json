@@ -1,0 +1,470 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-21",
+  "description": "设计星图 MVP 1.0 - 设计方向能力地图（面向设计类学生）",
+  "skillsMap": [
+    {
+      "direction": "工业设计",
+      "directionSlug": "industrial-design",
+      "basicSkills": [
+        {
+          "name": "手绘表达",
+          "description": "快速用草图表达设计概念，是工业设计师的'母语'",
+          "importance": "核心",
+          "learnPath": "每天练习30分钟产品速写，从简单几何体到复杂产品"
+        },
+        {
+          "name": "三维建模",
+          "description": "用软件把概念变成可量化的三维数字模型",
+          "importance": "核心",
+          "learnPath": "从Rhino入门，掌握NURBS建模逻辑，再学SolidWorks了解参数化"
+        },
+        {
+          "name": "渲染表现",
+          "description": "让模型看起来真实，用于提案和作品集",
+          "importance": "核心",
+          "learnPath": "KeyShot是入门首选，掌握材质、灯光、环境的基本逻辑"
+        },
+        {
+          "name": "设计调研",
+          "description": "理解用户、市场、技术，为设计决策提供依据",
+          "importance": "核心",
+          "learnPath": "学习用户访谈、竞品分析、趋势研究的基本方法"
+        },
+        {
+          "name": "人机工程学",
+          "description": "设计适合人使用的产品，涉及尺寸、力度、舒适度",
+          "importance": "重要",
+          "learnPath": "学习人体测量数据，理解握持、操作、观看的人因原则"
+        }
+      ],
+      "jobSkills": [
+        {
+          "name": "CMF设计",
+          "description": "决定产品的颜色、材料、表面处理，直接影响产品的高级感",
+          "whenNeeded": "求职消费电子、家电、汽车品牌时必备"
+        },
+        {
+          "name": "结构基础",
+          "description": "理解产品内部结构，能和结构工程师有效沟通",
+          "whenNeeded": "所有硬件设计岗位都需要基础结构认知"
+        },
+        {
+          "name": "设计提案",
+          "description": "把设计方案清晰、有说服力地呈现给客户或团队",
+          "whenNeeded": "设计咨询公司和高端品牌的核心能力"
+        },
+        {
+          "name": "工艺认知",
+          "description": "了解注塑、冲压、CNC、3D打印等制造工艺的可行性和成本",
+          "whenNeeded": "从概念到量产的关键能力"
+        },
+        {
+          "name": "品牌设计语言",
+          "description": "让系列产品保持一致的视觉识别特征",
+          "whenNeeded": "大品牌和长期产品线的核心能力"
+        }
+      ],
+      "bonusSkills": [
+        {
+          "name": "Alias汽车建模",
+          "description": "汽车设计行业的标准建模工具，曲面质量要求高",
+          "value": "想进汽车设计的必备技能"
+        },
+        {
+          "name": "Arduino原型",
+          "description": "快速验证智能产品的交互概念",
+          "value": "智能硬件和IoT方向的加分项"
+        },
+        {
+          "name": "3D打印",
+          "description": "快速制作实物原型验证设计",
+          "value": "所有硬件设计方向的加分项"
+        },
+        {
+          "name": "设计策略",
+          "description": "从商业和战略角度思考设计价值",
+          "value": "设计咨询公司和高级岗位的加分项"
+        }
+      ],
+      "tools": [
+        {"name": "Rhino", "type": "建模", "level": "必会", "note": "工业设计最通用的建模工具"},
+        {"name": "KeyShot", "type": "渲染", "level": "必会", "note": "最快上手的渲染器"},
+        {"name": "SolidWorks", "type": "建模", "level": "推荐", "note": "参数化建模，适合结构导向设计"},
+        {"name": "Photoshop", "type": "图像", "level": "必会", "note": "后期处理和排版"},
+        {"name": "Illustrator", "type": "矢量", "level": "推荐", "note": "矢量图形和技术图纸"},
+        {"name": "Alias", "type": "建模", "level": "进阶", "note": "汽车/A级曲面设计"},
+        {"name": "Blender", "type": "建模/渲染", "level": "推荐", "note": "免费全能，适合有机形态"}
+      ],
+      "commonMistakes": [
+        "只学软件不练手绘：软件是工具，手绘是思维",
+        "忽视结构可行性：好看但做不出来的设计没有价值",
+        "作品集只有效果图：缺少调研、过程、迭代",
+        "不懂材料和工艺：设计决策没有依据",
+        "盲目追求复杂造型：简洁往往更难做好"
+      ],
+      "learningPath": [
+        {"stage": "大一/大二", "focus": "打基础", "actions": ["每天手绘练习", "学Rhino基础建模", "学KeyShot基础渲染", "做1个完整项目练手"]},
+        {"stage": "大二/大三", "focus": "做项目", "actions": ["参加设计比赛", "做2-3个完整项目", "学CMF和工艺", "尝试不同产品类别"]},
+        {"stage": "大三/大四", "focus": "求职准备", "actions": ["打磨作品集", "针对性学目标岗位技能", "找实习", "准备面试讲解"]},
+        {"stage": "持续", "focus": "深耕", "actions": ["关注行业趋势", "积累材料样本", "参观工厂", "建立个人设计风格"]}
+      ],
+      "portfolioFocus": [
+        "展示完整设计流程：调研→概念→发展→细化→呈现",
+        "每个项目说明你的设计决策依据",
+        "包含手绘草图（证明设计思维过程）",
+        "有1个项目涉及结构或工艺思考",
+        "渲染质量要高（但不要过度）",
+        "作品集排版清晰，项目之间有逻辑关系"
+      ]
+    },
+    {
+      "direction": "UI/UX",
+      "directionSlug": "ui-ux",
+      "basicSkills": [
+        {
+          "name": "界面设计",
+          "description": "设计美观、一致、符合规范的界面",
+          "importance": "核心",
+          "learnPath": "从临摹优秀App开始，理解布局、配色、字体的系统方法"
+        },
+        {
+          "name": "用户研究",
+          "description": "理解用户真实需求和行为，而不是假设",
+          "importance": "核心",
+          "learnPath": "学习访谈、问卷、可用性测试的基本方法，做1个真实研究项目"
+        },
+        {
+          "name": "交互设计",
+          "description": "设计用户完成任务的流程和反馈",
+          "importance": "核心",
+          "learnPath": "学习信息架构、任务流程、状态设计，用Figma做可交互原型"
+        },
+        {
+          "name": "设计系统",
+          "description": "建立和维护可复用的组件和规范",
+          "importance": "重要",
+          "learnPath": "研究Material Design、Ant Design等成熟设计系统，尝试搭建自己的组件库"
+        },
+        {
+          "name": "原型制作",
+          "description": "快速验证设计想法，降低决策风险",
+          "importance": "核心",
+          "learnPath": "掌握Figma原型功能，学习用ProtoPie做高保真交互"
+        }
+      ],
+      "jobSkills": [
+        {
+          "name": "数据思维",
+          "description": "用数据验证设计效果，而不是凭感觉",
+          "whenNeeded": "互联网大厂的必备能力"
+        },
+        {
+          "name": "跨团队协作",
+          "description": "和产品、开发、运营有效沟通",
+          "whenNeeded": "所有企业级岗位的软技能要求"
+        },
+        {
+          "name": "B端设计",
+          "description": "设计复杂的企业级系统界面",
+          "whenNeeded": "SaaS/企业服务方向的核心能力"
+        },
+        {
+          "name": "设计文档",
+          "description": "清晰记录设计决策，便于团队协作",
+          "whenNeeded": "大厂和设计规范团队的必备能力"
+        },
+        {
+          "name": "可用性测试",
+          "description": "系统性地验证设计的易用性",
+          "whenNeeded": "UX研究方向的必备能力"
+        }
+      ],
+      "bonusSkills": [
+        {
+          "name": "前端基础",
+          "description": "理解开发实现原理，设计更可行",
+          "value": "和开发沟通效率大幅提升"
+        },
+        {
+          "name": "动效设计",
+          "description": "设计界面转场和微交互",
+          "value": "提升作品精致度和用户体验"
+        },
+        {
+          "name": "AIGC工具",
+          "description": "用AI辅助视觉探索和素材生成",
+          "value": "提升设计效率和创意广度"
+        },
+        {
+          "name": "用户研究进阶",
+          "description": "定性+定量研究方法",
+          "value": "想转用研方向的必备"
+        }
+      ],
+      "tools": [
+        {"name": "Figma", "type": "设计/原型", "level": "必会", "note": "UI/UX行业标准工具"},
+        {"name": "Sketch", "type": "设计", "level": "推荐", "note": "Mac平台经典工具"},
+        {"name": "Axure", "type": "原型", "level": "推荐", "note": "复杂交互原型"},
+        {"name": "Miro", "type": "协作", "level": "推荐", "note": "用户旅程图、流程图"},
+        {"name": "Notion", "type": "文档", "level": "推荐", "note": "设计文档和知识管理"},
+        {"name": "Principle", "type": "动效", "level": "进阶", "note": "界面动效设计"},
+        {"name": "Maze", "type": "测试", "level": "进阶", "note": "远程可用性测试"}
+      ],
+      "commonMistakes": [
+        "只画界面不研究用户：没有用户依据的设计是自我表达",
+        "忽视设计规范：每个平台有自己的规则",
+        "作品集只有最终效果图：缺少问题和过程",
+        "不懂开发约束：设计无法落地",
+        "过度追求视觉：好用比好看更重要",
+        "不做可用性测试：假设用户会懂"
+      ],
+      "learningPath": [
+        {"stage": "入门", "focus": "工具+规范", "actions": ["精通Figma", "临摹10个优秀App", "学iOS/Android设计规范", "了解设计系统基础"]},
+        {"stage": "进阶", "focus": "项目+思维", "actions": ["做1个含用户研究的完整项目", "学信息架构和交互流程", "做可用性测试", "搭建个人组件库"]},
+        {"stage": "求职", "focus": "作品集", "actions": ["准备2个完整项目（C端+B端）", "打磨作品集叙事", "练习面试讲解", "找实习积累经验"]},
+        {"stage": "持续", "focus": "深耕", "actions": ["关注设计系统发展", "学数据分析", "了解前端基础", "建立个人设计观点"]}
+      ],
+      "portfolioFocus": [
+        "每个项目从问题出发：用户是谁、痛点是什么",
+        "展示设计思维过程：调研→洞察→方案→验证",
+        "包含可交互原型（Figma链接或录屏）",
+        "有数据或用户反馈支撑设计决策",
+        "展示对设计规范的理解",
+        "作品集本身也是UX作品：导航清晰、加载快、易阅读"
+      ]
+    },
+    {
+      "direction": "视觉/品牌",
+      "directionSlug": "visual-brand",
+      "basicSkills": [
+        {
+          "name": "排版设计",
+          "description": "让文字信息清晰、美观、有层级地呈现",
+          "importance": "核心",
+          "learnPath": "学习网格系统、字体搭配、信息层级，大量分析优秀排版案例"
+        },
+        {
+          "name": "色彩理论",
+          "description": "理解色彩关系，建立品牌调性",
+          "importance": "核心",
+          "learnPath": "学习色轮、配色方案、色彩心理学，做色彩提取和搭配练习"
+        },
+        {
+          "name": "品牌识别",
+          "description": "建立品牌在视觉上的统一识别系统",
+          "importance": "核心",
+          "learnPath": "学习Logo设计、VI系统、品牌应用，做1个虚构品牌全案"
+        },
+        {
+          "name": "图形设计",
+          "description": "创造和运用图形元素传达信息",
+          "importance": "核心",
+          "learnPath": "学习图形创意、图标设计、插画基础，练习从概念到图形转化"
+        },
+        {
+          "name": "摄影美术",
+          "description": "指导或执行品牌视觉素材的拍摄",
+          "importance": "重要",
+          "learnPath": "学习摄影基础、布光、构图，练习产品摄影和场景搭建"
+        }
+      ],
+      "jobSkills": [
+        {
+          "name": "包装设计",
+          "description": "设计产品的'第一印象'，影响购买决策",
+          "whenNeeded": "消费品牌和电商方向的核心能力"
+        },
+        {
+          "name": "社媒视觉",
+          "description": "为社交媒体平台设计传播内容",
+          "whenNeeded": "新消费品牌和互联网方向的必备能力"
+        },
+        {
+          "name": "印刷工艺",
+          "description": "理解材料和工艺，让设计能完美落地",
+          "whenNeeded": "包装和线下物料方向的必备能力"
+        },
+        {
+          "name": "品牌策略",
+          "description": "从商业角度思考品牌定位和设计方向",
+          "whenNeeded": "设计咨询公司和高级品牌岗位"
+        },
+        {
+          "name": "动态视觉",
+          "description": "让品牌视觉动起来，适应数字媒介",
+          "whenNeeded": "互联网和新媒体方向的加分项"
+        }
+      ],
+      "bonusSkills": [
+        {
+          "name": "C4D/Blender",
+          "description": "三维视觉设计和产品渲染",
+          "value": "大幅提升视觉表现力"
+        },
+        {
+          "name": "字体设计",
+          "description": "定制品牌字体或字库",
+          "value": "品牌设计的顶级技能，稀缺度高"
+        },
+        {
+          "name": "AIGC视觉",
+          "description": "用AI辅助创意视觉生成",
+          "value": "提升创意效率和视觉多样性"
+        },
+        {
+          "name": "动效设计",
+          "description": "品牌Motion Graphic和微动效",
+          "value": "数字品牌方向的加分项"
+        }
+      ],
+      "tools": [
+        {"name": "Illustrator", "type": "矢量", "level": "必会", "note": "品牌设计的核心工具"},
+        {"name": "Photoshop", "type": "图像", "level": "必会", "note": "图像处理和合成"},
+        {"name": "InDesign", "type": "排版", "level": "推荐", "note": "书籍/杂志/画册排版"},
+        {"name": "Figma", "type": "界面", "level": "推荐", "note": "数字品牌和应用"},
+        {"name": "C4D", "type": "三维", "level": "进阶", "note": "品牌三维视觉"},
+        {"name": "Blender", "type": "三维", "level": "进阶", "note": "免费替代C4D"},
+        {"name": "After Effects", "type": "动效", "level": "进阶", "note": "动态视觉设计"}
+      ],
+      "commonMistakes": [
+        "只学软件不学理论：软件是笔，理论是语法",
+        "忽视品牌一致性：每个触点都要统一",
+        "过度依赖模板：模板是起点，不是终点",
+        "不懂印刷工艺：屏幕上看好的设计印出来可能灾难",
+        "作品集风格混乱：需要展示多样性，但要有个人主线",
+        "忽视文字设计：排版是视觉设计的核心"
+      ],
+      "learningPath": [
+        {"stage": "入门", "focus": "基础", "actions": ["学Illustrator和Photoshop", "做字体/色彩/排版练习", "临摹优秀品牌案例", "了解设计史和流派"]},
+        {"stage": "进阶", "focus": "项目", "actions": ["做1个品牌全案", "学包装设计基础", "练习摄影和精修", "研究3个你喜欢的品牌"]},
+        {"stage": "求职", "focus": "作品集", "actions": ["准备品牌+包装+社媒的多样作品", "打磨作品集叙事", "了解目标公司的视觉语言", "找实习"]},
+        {"stage": "持续", "focus": "深耕", "actions": ["建立个人风格", "学C4D/动效", "关注视觉趋势", "积累材料和工艺知识"]}
+      ],
+      "portfolioFocus": [
+        "准备1个完整的品牌全案：Logo→VI→应用→包装/社媒",
+        "展示风格多样性但保持个人主线",
+        "每个项目说明品牌定位和设计策略",
+        "包含实物mockup或场景应用图",
+        "排版本身就是作品：展示你的排版能力",
+        "有1-2个个人创作项目（非商业），展示你的创意边界"
+      ]
+    },
+    {
+      "direction": "AIGC设计",
+      "directionSlug": "aigc-design",
+      "basicSkills": [
+        {
+          "name": "AI图像生成",
+          "description": "用Midjourney、Stable Diffusion等工具生成高质量图像",
+          "importance": "核心",
+          "learnPath": "从Midjourney开始，理解Prompt基本结构，再学Stable Diffusion获得更多控制"
+        },
+        {
+          "name": "Prompt Engineering",
+          "description": "写出能稳定产出预期结果的提示词",
+          "importance": "核心",
+          "learnPath": "系统学习Prompt结构、风格词、参数控制，建立自己的Prompt库"
+        },
+        {
+          "name": "图像后期精修",
+          "description": "AI生成后的人工优化，让结果达到商业标准",
+          "importance": "核心",
+          "learnPath": "精通Photoshop修图、合成、调色，这是你和纯AI用户的分水岭"
+        },
+        {
+          "name": "传统美术基础",
+          "description": "理解构图、色彩、光影、解剖，才能评判和引导AI",
+          "importance": "核心",
+          "learnPath": "学素描、色彩、构成，这是控制AI的底层能力"
+        },
+        {
+          "name": "风格控制",
+          "description": "让AI稳定产出统一风格的内容",
+          "importance": "重要",
+          "learnPath": "学习Lora训练、ControlNet、风格参考图等控制方法"
+        }
+      ],
+      "jobSkills": [
+        {
+          "name": "商业应用",
+          "description": "把AIGC能力应用到真实商业项目中",
+          "whenNeeded": "所有AIGC岗位的核心要求"
+        },
+        {
+          "name": "工作流搭建",
+          "description": "建立高效的AI辅助设计流程",
+          "whenNeeded": "设计团队AIGC提效方向"
+        },
+        {
+          "name": "版权合规",
+          "description": "了解AI生成内容的版权风险和合规使用",
+          "whenNeeded": "商业化使用时的必备知识"
+        },
+        {
+          "name": "多模态生成",
+          "description": "AI视频、3D、音乐等多模态内容生成",
+          "whenNeeded": "前沿方向的加分项"
+        },
+        {
+          "name": "模型训练",
+          "description": "训练Lora、ControlNet等自定义模型",
+          "whenNeeded": "需要高度风格控制的岗位"
+        }
+      ],
+      "bonusSkills": [
+        {
+          "name": "ComfyUI",
+          "description": "可视化AI工作流搭建工具",
+          "value": "专业AIGC工作流的必备工具"
+        },
+        {
+          "name": "Runway/Pika",
+          "description": "AI视频生成工具",
+          "value": "AIGC视频方向的必备"
+        },
+        {
+          "name": "Python基础",
+          "description": "自动化和自定义AI流程",
+          "value": "AIGC流程设计师的加分项"
+        },
+        {
+          "name": "三维基础",
+          "description": "Blender/C4D配合AI生成",
+          "value": "提升AI生成结果的可控性"
+        }
+      ],
+      "tools": [
+        {"name": "Midjourney", "type": "AI图像", "level": "必会", "note": "最易上手的AI图像生成"},
+        {"name": "Stable Diffusion", "type": "AI图像", "level": "必会", "note": "可控性最高的开源工具"},
+        {"name": "Photoshop", "type": "图像", "level": "必会", "note": "AI生成后的精修必备"},
+        {"name": "ComfyUI", "type": "工作流", "level": "推荐", "note": "可视化SD工作流搭建"},
+        {"name": "ControlNet", "type": "控制", "level": "推荐", "note": "控制AI生成结构"},
+        {"name": "Runway", "type": "AI视频", "level": "进阶", "note": "AI视频生成"},
+        {"name": "ChatGPT/Claude", "type": "AI文本", "level": "推荐", "note": "辅助创意和Prompt优化"}
+      ],
+      "commonMistakes": [
+        "只学工具不学美术：没有审美判断力，AI生成什么你都觉得好",
+        "忽视后期精修：AI直出达不到商业标准",
+        "Prompt随意写：好的Prompt需要系统学习和积累",
+        "过度依赖AI：AI是工具，创意和判断还是靠人",
+        "不懂版权风险：商业使用需要了解合规边界",
+        "作品集只有AI图：要展示你的创意方向和后期能力"
+      ],
+      "learningPath": [
+        {"stage": "入门", "focus": "工具", "actions": ["学Midjourney基础", "学Stable Diffusion基础", "学Photoshop精修", "做100张AI生成练习"]},
+        {"stage": "进阶", "focus": "控制", "actions": ["学ControlNet", "学Lora训练", "建立Prompt库", "做风格一致性项目"]},
+        {"stage": "求职", "focus": "商业", "actions": ["做3个商业级AIGC项目", "学ComfyUI工作流", "了解版权合规", "准备作品集"]},
+        {"stage": "持续", "focus": "前沿", "actions": ["跟进AI工具更新", "学AI视频/3D", "建立个人工作流", "形成独特AI美学"]}
+      ],
+      "portfolioFocus": [
+        "展示创意方向：AI只是工具，你的创意才是价值",
+        "说明Prompt策略：展示你如何控制AI",
+        "展示后期精修：AI生成→你的优化→最终效果",
+        "有风格一致性项目：证明你能稳定产出",
+        "包含商业应用场景：不只是好看的图，而是解决设计问题",
+        "展示工作流：你是如何高效使用AI工具的"
+      ]
+    }
+  ]
+}

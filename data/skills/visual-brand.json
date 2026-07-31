@@ -1,0 +1,100 @@
+{
+  "slug": "visual-brand",
+  "title": "视觉品牌设计技能图谱",
+  "direction": "visual-brand",
+  "description": "视觉品牌设计师负责品牌的视觉形象设计和传播物料。需要兼顾创意性、一致性和商业价值。",
+  "suitableUsers": "视觉传达、平面设计、广告设计、品牌设计等专业的学生，以及对品牌视觉感兴趣的设计类学生。",
+  "baseSkills": [
+    { "name": "标志设计", "level": "入门", "description": "Logo设计原则、方法、流程" },
+    { "name": "字体设计", "level": "入门", "description": "字体选择、字形设计、字体搭配" },
+    { "name": "色彩设计", "level": "入门", "description": "品牌色彩体系构建" },
+    { "name": "版式设计", "level": "基础", "description": "平面设计排版基础" },
+    { "name": "印刷工艺", "level": "基础", "description": "常见印刷方式和工艺了解" }
+  ],
+  "jobReadySkills": [
+    { "name": "Illustrator", "level": "核心", "importance": "必须精通，矢量设计必备", "description": "Logo设计、VI设计、插画绘制" },
+    { "name": "品牌VI设计", "level": "核心", "importance": "必须掌握", "description": "完整VI系统设计" },
+    { "name": "包装设计", "level": "核心", "importance": "必须掌握", "description": "包装结构、包装视觉" },
+    { "name": "Photoshop", "level": "核心", "importance": "必须掌握", "description": "图片处理、效果制作" },
+    { "name": "InDesign", "level": "进阶", "importance": "推荐掌握", "description": "画册、书籍等长文档排版" },
+    { "name": "插画能力", "level": "进阶", "importance": "加分项", "description": "品牌插画风格绘制" }
+  ],
+  "bonusSkills": [
+    "C4D三维效果",
+    "动效设计（After Effects）",
+    "IP形象设计",
+    "包装结构设计",
+    "数字营销设计",
+    "电商视觉设计",
+    "字体设计",
+    "品牌策略思维"
+  ],
+  "tools": [
+    {
+      "category": "矢量设计",
+      "items": [
+        { "name": "Illustrator", "priority": "必学" },
+        { "name": "CorelDRAW", "priority": "可选" },
+        { "name": "Affinity Designer", "priority": "可选" }
+      ]
+    },
+    {
+      "category": "位图处理",
+      "items": [
+        { "name": "Photoshop", "priority": "必学" },
+        { "name": "Lightroom", "priority": "可选" }
+      ]
+    },
+    {
+      "category": "排版设计",
+      "items": [
+        { "name": "InDesign", "priority": "推荐" },
+        { "name": "Figma", "priority": "可选" }
+      ]
+    },
+    {
+      "category": "三维/动效",
+      "items": [
+        { "name": "C4D", "priority": "加分" },
+        { "name": "After Effects", "priority": "加分" }
+      ]
+    }
+  ],
+  "portfolioRequirements": [
+    "至少3-5个完整品牌设计案例，每个案例包含：品牌策略分析-Logo设计-VI应用展示",
+    "Logo设计要有多种应用场景（名片、工牌、包装等）",
+    "展示不同行业的品牌设计能力",
+    "如果有实物样品一定要拍照展示",
+    "包含设计说明，解释设计决策"
+  ],
+  "commonMistakes": [
+    "Logo设计过于简单或过于复杂",
+    "VI应用不完整，只有Logo没有应用",
+    "不了解印刷工艺，设计的颜色无法实现",
+    "品牌风格不统一，缺乏系统性",
+    "缺少设计说明，无法理解设计意图",
+    "排版杂乱，视觉层次不清晰"
+  ],
+  "learningPath": [
+    {
+      "stage": "大一-大二基础期",
+      "goals": ["掌握平面设计基础", "学习字体和色彩理论", "学习印刷工艺知识", "完成基础设计课程"],
+      "duration": "2年"
+    },
+    {
+      "stage": "大二-大三技能期",
+      "goals": ["精通Illustrator", "学习VI系统设计", "掌握包装设计基础", "完成品牌设计项目"],
+      "duration": "1-2年"
+    },
+    {
+      "stage": "大三-大四实战期",
+      "goals": ["参加设计竞赛", "寻找品牌设计实习", "完善作品集", "准备秋招/春招"],
+      "duration": "1-2年"
+    },
+    {
+      "stage": "毕业后持续学习",
+      "goals": ["关注设计趋势", "培养品牌策略思维", "扩展客户资源", "建立个人设计风格"],
+      "duration": "终身"
+    }
+  ]
+}
