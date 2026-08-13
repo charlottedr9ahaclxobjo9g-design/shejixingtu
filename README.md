@@ -32,13 +32,21 @@ npm audit --omit=dev --audit-level=high
 
 ## 岗位数据维护
 
-岗位源数据位于 `public/data/jobs.json`。`verificationStatus` 是唯一的在招状态口径：
+岗位源数据位于 `data/jobs.json`，只在构建阶段读取，不会作为静态文件公开。`verificationStatus` 仅供内部维护，前台不展示。
 
 - `verified-active`：有可访问出处、可核对 JD 内容和 `verifiedAt`
 - `needs-review`：已有出处，待最新一轮人工复核
 - `needs-source`：待补可追溯出处
 - `expired`：原记录截止日期已过
 - `reference`：历史参考
+
+只有同时满足以下条件的记录会进入岗位列表、详情路由和 sitemap：
+
+- `publicVisible: true`
+- 包含可访问的 `sourceUrl`
+- 包含最近检查日期 `sourceCheckedAt`
+- 未超过明确的 `deadline`
+- 包含学生解读、作品集建议和准备清单
 
 更新数据后运行：
 

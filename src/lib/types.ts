@@ -55,6 +55,8 @@ export interface Job {
   deadline?: string | null; // 原招聘信息标注的截止时间（YYYY-MM-DD），可能已过期
   sourceName?: string;
   sourceUrl?: string;
+  publicVisible?: boolean;
+  sourceCheckedAt?: string;
   originalJd?: OriginalJd;
   verificationStatus?: JobVerificationStatus;
   verifiedAt?: string;

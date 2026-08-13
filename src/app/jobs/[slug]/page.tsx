@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { notFound } from "next/navigation";
+import { SaveJobButton } from "@/components/jobs/save-job-button";
 import { ExternalFormButton } from "@/components/shared/external-form-button";
 import { getJobBySlug, getJobs } from "@/lib/data/jobs";
 import {
   directionLabels,
   getJobCities,
   getJobDisplayTitle,
-  getJobStatus,
+  getJobTimingLabel,
   getJobTypeLabel,
 } from "@/lib/job-presentation";
 import type { Metadata } from "next";
@@ -48,7 +49,6 @@ export default async function JobDetailPage({ params }: Props) {
   const job = getJobBySlug(slug);
   if (!job) notFound();
 
-  const status = getJobStatus(job);
   const cities = getJobCities(job);
   const hasOriginalJd = Boolean(
     job.originalJd?.rawText ||
@@ -69,8 +69,7 @@ export default async function JobDetailPage({ params }: Props) {
           <div className="detail-hero-card">
             <div className="detail-hero-top">
               <span className="tag purple">{directionLabels[job.direction] || job.direction}</span>
-              <span className={`status-tag status-${status.tone}`}>{status.label}</span>
-              <span className="track-date">收录日期：{job.publishedDate || "未标注"}</span>
+              <span className="track-date">{getJobTimingLabel(job)}</span>
             </div>
 
             <h1>{getJobDisplayTitle(job)}</h1>
@@ -80,18 +79,19 @@ export default async function JobDetailPage({ params }: Props) {
               <span>{getJobTypeLabel(job)}</span>
             </div>
 
+            <div className="detail-hero-actions">
+              <a className="btn btn-dark" href={job.sourceUrl} target="_blank" rel="nofollow noopener noreferrer">
+                查看招聘原文 <ExternalLink size={15} aria-hidden="true" />
+              </a>
+              <SaveJobButton slug={job.slug} showLabel />
+            </div>
+
             <div className="source-note">
               <div>
-                <strong>信息来源：</strong>{" "}
-                {job.sourceName || "公开信息整理"}。{status.description}
+                <strong>信息来源：</strong> {job.sourceName || "公开招聘页面"}
+                {job.sourceCheckedAt && <span> · 更新于 {job.sourceCheckedAt}</span>}
               </div>
-              {job.sourceUrl ? (
-                <a href={job.sourceUrl} target="_blank" rel="nofollow noopener noreferrer">
-                  查看公开出处 <ExternalLink size={14} aria-hidden="true" />
-                </a>
-              ) : (
-                <span className="source-missing">出处待补</span>
-              )}
+              <p>招聘状态、完整职责和投递要求以原页面为准。</p>
             </div>
           </div>
         </div>
@@ -103,8 +103,8 @@ export default async function JobDetailPage({ params }: Props) {
             <article className="detail-card">
               <div className="content-heading">
                 <p className="section-index">01 / PUBLIC JD</p>
-                <h2>公开 JD 信息</h2>
-                <p>先核对公开招聘内容，再阅读站内解读。</p>
+                <h2>岗位原文与基本信息</h2>
+                <p>先了解企业发布的岗位，再阅读站内的学生版解释。</p>
               </div>
 
               {hasOriginalJd ? (
@@ -124,9 +124,14 @@ export default async function JobDetailPage({ params }: Props) {
                   ) : null}
                 </div>
               ) : (
-                <div className="data-gap">
-                  <strong>原始 JD 待补充</strong>
-                  <p>当前记录只包含岗位名称、公司、城市、技能标签和整理说明，尚没有可逐条核对的原始职责与任职要求，因此不展示推测性 JD。</p>
+                <div className="jd-source-cta">
+                  <div>
+                    <strong>完整职责与任职要求请查看招聘原文</strong>
+                    <p>站内只保留可确认的公司、城市、岗位类型、技能关键词与截止时间，避免二次转录造成信息遗漏。</p>
+                  </div>
+                  <a className="btn btn-light" href={job.sourceUrl} target="_blank" rel="nofollow noopener noreferrer">
+                    打开招聘原文 <ExternalLink size={15} aria-hidden="true" />
+                  </a>
                 </div>
               )}
 
@@ -134,7 +139,7 @@ export default async function JobDetailPage({ params }: Props) {
                 <div><dt>公司</dt><dd>{job.companyName}</dd></div>
                 <div><dt>城市</dt><dd>{cities.join(" / ")}</dd></div>
                 <div><dt>类型</dt><dd>{getJobTypeLabel(job)}</dd></div>
-                <div><dt>原标注截止</dt><dd>{job.deadline || "未标注"}</dd></div>
+                <div><dt>截止时间</dt><dd>{job.deadline || "原页面未标注"}</dd></div>
               </dl>
             </article>
 
@@ -199,12 +204,11 @@ export default async function JobDetailPage({ params }: Props) {
           </div>
 
           <aside className="detail-side">
-            <div className="side-panel verification-panel">
-              <p className="mini-label">数据状态</p>
-              <h3>{status.label}</h3>
-              <p>{status.description}</p>
-              {job.verificationNote && <p className="verification-note">{job.verificationNote}</p>}
-              {job.verifiedAt && <p className="muted-small">最近核验：{job.verifiedAt}</p>}
+            <div className="side-panel saved-job-panel">
+              <p className="mini-label">MY JOB LIST</p>
+              <h3>加入我的岗位清单</h3>
+              <p>收藏保存在当前浏览器，回到岗位页可一键只看已收藏内容。</p>
+              <SaveJobButton slug={job.slug} showLabel />
             </div>
 
             <div className="side-panel">

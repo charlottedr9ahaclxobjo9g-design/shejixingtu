@@ -3,7 +3,7 @@ import { getFeaturedJobs, getJobs } from "@/lib/data/jobs";
 import { JobCard } from "@/components/jobs/job-card";
 import { SkillDirectionCards } from "@/components/home/skill-direction-cards";
 import { ArrowRight, ClipboardCheck } from "lucide-react";
-import { getJobStatus } from "@/lib/job-presentation";
+import { getJobTimingLabel } from "@/lib/job-presentation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function HomePage() {
             <div className="metric-strip">
               <div className="metric">
                 <strong>{jobCount}</strong>
-                <span>岗位情报样本</span>
+                <span>可查看原文岗位</span>
               </div>
               <div className="metric">
                 <strong>4</strong>
@@ -86,7 +86,7 @@ export default function HomePage() {
                       <strong>{job.title}</strong>
                       <span>{job.skills.slice(0, 3).join(" / ")}</span>
                     </div>
-                    <span className="score">{getJobStatus(job).label}</span>
+                    <span className="score">{getJobTimingLabel(job)}</span>
                   </div>
                 ))}
               </div>
@@ -123,9 +123,9 @@ export default function HomePage() {
         <div className="shell">
           <div className="section-head mb-6">
             <div>
-              <p className="label">岗位样本</p>
-              <h2>先核对信息，再拆解准备重点</h2>
-              <p className="section-copy">每条卡片都显示核验状态；没有公开出处的内容不会标记为在招。</p>
+              <p className="label">近期可查岗位</p>
+              <h2>从招聘原文进入，再拆解准备重点</h2>
+              <p className="section-copy">每条岗位都能直达公开来源，并配有面向设计学生的作品集准备建议。</p>
             </div>
             <Link href="/jobs" className="btn btn-light">查看全部岗位 <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>

@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const dataPath = path.join(root, "public", "data", "jobs.json");
+const dataPath = path.join(root, "data", "jobs.json");
 const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
 const automotive = ["比亚迪", "东风", "奇瑞", "小鹏", "蔚来", "理想", "雅迪"];
@@ -35,7 +35,7 @@ function verificationStatus(job) {
 
 data.version = "3.0";
 data.updatedAt = "2026-08-13";
-data.description = "设计岗位公开信息样本与学生版解读。核验状态由数据字段维护；未标记为已核验在招的记录仅供求职准备参考。";
+data.description = "设计岗位内部数据与学生版解读。publicVisible 字段决定是否进入公开网站。";
 data.jobs = data.jobs.map((job) => ({
   ...job,
   cities: citiesFrom(job.city),

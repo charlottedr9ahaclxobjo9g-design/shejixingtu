@@ -22,7 +22,7 @@ export function SiteFooter() {
         </div>
         <div>
           <h4>项目说明</h4>
-          <Link href="/about#data-policy">数据核验口径</Link>
+          <Link href="/about#data-policy">数据来源与更新</Link>
           <Link href="/about#privacy">隐私与第三方服务</Link>
           <Link href="/about">免责声明</Link>
         </div>

@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
+import { SaveJobButton } from "@/components/jobs/save-job-button";
 import { Tag } from "@/components/shared/tag";
 import {
   directionLabels,
   getJobCities,
   getJobDisplayTitle,
-  getJobStatus,
+  getJobTimingLabel,
   getJobTypeLabel,
 } from "@/lib/job-presentation";
 import type { Job } from "@/lib/types";
@@ -20,21 +21,22 @@ const directionColors: Record<string, "purple" | "orange" | "teal"> = {
 };
 
 export function JobCard({ job }: { job: Job }) {
-  const status = getJobStatus(job);
   const cities = getJobCities(job);
+  const titleId = `job-title-${job.slug}`;
 
   return (
-    <Link
-      href={`/jobs/${job.slug}`}
+    <article
       className="job-card"
       data-job-card
       data-kind={job.direction}
-      aria-label={`查看 ${job.companyName} ${job.title} 岗位详情`}
+      aria-labelledby={titleId}
     >
       <div className="job-logo" aria-hidden="true">{job.companyName.slice(0, 1)}</div>
 
       <div className="job-card-body">
-        <h3>{getJobDisplayTitle(job)}</h3>
+        <h3 id={titleId}>
+          <Link href={`/jobs/${job.slug}`}>{getJobDisplayTitle(job)}</Link>
+        </h3>
         <p className="job-meta">{job.companyName} · {cities.join(" / ")}</p>
         <p className="job-desc line-clamp-2">{job.studentExplanation}</p>
         <div className="tag-row">
@@ -49,10 +51,22 @@ export function JobCard({ job }: { job: Job }) {
       </div>
 
       <div className="job-card-aside">
-        <span className={`status-tag status-${status.tone}`}>{status.label}</span>
+        <div className="job-card-utility">
+          <span className="job-timing">{getJobTimingLabel(job)}</span>
+          <SaveJobButton slug={job.slug} />
+        </div>
         <span className="job-difficulty">难度：{job.difficulty}</span>
-        <span className="job-card-cta">查看 JD 与解读 <ArrowRight size={15} aria-hidden="true" /></span>
+        <div className="job-card-actions">
+          {job.sourceUrl && (
+            <a href={job.sourceUrl} target="_blank" rel="nofollow noopener noreferrer" className="job-source-link">
+              招聘原文 <ExternalLink size={14} aria-hidden="true" />
+            </a>
+          )}
+          <Link href={`/jobs/${job.slug}`} className="job-card-cta">
+            查看解读 <ArrowRight size={15} aria-hidden="true" />
+          </Link>
+        </div>
       </div>
-    </Link>
+    </article>
   );
 }

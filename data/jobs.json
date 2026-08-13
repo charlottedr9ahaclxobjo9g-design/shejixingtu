@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "updatedAt": "2026-08-13",
-  "description": "设计岗位公开信息样本与学生版解读。核验状态由数据字段维护；未标记为已核验在招的记录仅供求职准备参考。",
+  "description": "设计岗位内部数据与学生版解读。publicVisible 字段决定是否进入公开网站。",
   "jobs": [
     {
       "id": "job-001",
@@ -241,7 +241,7 @@
       ],
       "difficulty": "中等",
       "studentFit": "产品造型设计、CMF设计、CMF有基础，有2026届求职计划的学生",
-      "studentExplanation": "这是汇川技术的工业设计师，春招岗位（2026届）。工业/产品设计岗的日常是把概念推进到可量产：造型推敲、3D建模渲染、和结构工程师反复改方案。JD里明确提到产品造型设计、CMF设计、CMF、结构设计，这几项就是准备和面试的重点。薪资标注为15-26k·15薪，在设计类岗位里属于正常水平。民企节奏快、上手直接，实习生往往能快速参与真实项目，作品集要体现执行力和落地能力。",
+      "studentExplanation": "这条工业设计岗位把产品造型、CMF 与结构协同列为主要能力关键词。对学生来说，重点不是只展示渲染结果，而是用草图、建模、材料工艺与结构可行性说明一个方案如何走向落地。",
       "portfolioAdvice": "准备2-3个完整的产品设计项目，展示从调研→草图→建模→渲染→CMF考量的完整流程；至少1个作品要体现你对结构可行性和材料工艺的思考，而不只是漂亮效果图。",
       "preparationChecklist": [
         "作品集含2-3个完整产品设计项目",
@@ -250,11 +250,14 @@
         "准备好手绘/草图过程稿",
         "简历写明专业方向和可到岗时间"
       ],
-      "sourceNote": "信息整理自公开招聘信息（春招岗位（2026届）），仅供学习参考，原标注截止时间 2026-09-02；岗位状态可能已变化，请以企业官方渠道为准",
-      "sourceName": "公开招聘信息",
+      "sourceNote": "公开招聘页面最近检查于 2026-08-13，原页面标注截止时间为 2026-09-02。",
+      "sourceName": "猎聘",
       "publishedDate": "2026-07-23",
       "deadline": "2026-09-02",
       "sourceUrl": "https://www.liepin.com/job/1976930083.shtml",
+      "sourceCheckedAt": "2026-08-13",
+      "publicVisible": true,
+      "featured": true,
       "cities": [
         "苏州"
       ],
@@ -1618,7 +1621,7 @@
     {
       "id": "job-038",
       "slug": "li-xiang-qi-che-hmi-ti-yan-she-ji-shi",
-      "title": "HMI体验设计师",
+      "title": "UX设计师",
       "companyName": "理想汽车",
       "companySlug": "li-xiang-qi-che",
       "city": "北京",
@@ -1638,7 +1641,7 @@
       ],
       "difficulty": "中等",
       "studentFit": "APP、交互设计、界面设计有基础，有2026届求职计划的学生",
-      "studentExplanation": "这是理想汽车的HMI体验设计师，春招岗位（2026届）。UI/UX岗的日常是画界面、定规范、跟进开发还原，实习阶段通常从具体页面的执行做起。JD里明确提到APP、交互设计、界面设计、UI设计，这几项就是准备和面试的重点。薪资标注为15-20K·14薪，在设计类岗位里属于正常水平。民企节奏快、上手直接，实习生往往能快速参与真实项目，作品集要体现执行力和落地能力。",
+      "studentExplanation": "这条 UX 设计岗位把 APP、交互设计、界面设计与 UI 设计列为主要关键词。作品集需要讲清需求分析、信息架构、原型与视觉方案之间的关系，并用规范、组件和开发协作证据体现落地能力。",
       "portfolioAdvice": "准备2-3个完整的App/Web项目，展示从需求分析→信息架构→原型→视觉的完整链路；突出设计规范意识和组件化思维，有真实改版数据或用户反馈更好。",
       "preparationChecklist": [
         "作品集含2-3个完整UI/UX项目",
@@ -1647,15 +1650,18 @@
         "了解设计规范和组件库",
         "准备1-2分钟的项目讲解"
       ],
-      "sourceNote": "信息整理自公开招聘信息（春招岗位（2026届）），仅供学习参考；岗位状态可能已变化，请以企业官方渠道为准",
-      "sourceName": "公开招聘信息",
+      "sourceNote": "公开招聘页面最近检查于 2026-08-13。",
+      "sourceName": "猎聘",
       "publishedDate": "2026-07-23",
       "deadline": null,
       "sourceUrl": "https://m.liepin.com/job/1983348857.shtml",
+      "sourceCheckedAt": "2026-08-13",
+      "publicVisible": true,
+      "featured": true,
       "cities": [
         "北京"
       ],
-      "focusArea": "智能座舱方向",
+      "focusArea": "汽车与出行方向",
       "verificationStatus": "needs-review",
       "verificationNote": "已收录公开出处，尚待人工确认页面可访问、岗位仍有效且信息一致。"
     },
@@ -2452,7 +2458,7 @@
       ],
       "difficulty": "入门",
       "studentFit": "AIGC、AI绘画、提示词有基础，有2026届求职计划的学生",
-      "studentExplanation": "这是上海基美影业股份有限公司的AIGC影视创意制作，日常实习岗（2026届）。AIGC设计岗是新兴方向，核心是用AI工具提升视觉产出效率，同时保持设计判断力——企业要的不是会打字生成图的人，而是懂设计的AI使用者。JD里明确提到AIGC、AI绘画、提示词、Prompt，这几项就是准备和面试的重点。民企节奏快、上手直接，实习生往往能快速参与真实项目，作品集要体现执行力和落地能力。",
+      "studentExplanation": "这条影视创意实习岗位把 AIGC、AI 绘画与提示词列为主要关键词。准备作品时要展示从提示词迭代、方案筛选到人工精修的完整过程，让面试官看到设计判断与可控产出，而不是只看到生成结果。",
       "portfolioAdvice": "作品集要体现「AI+设计」的工作流：同一主题下AI生成与人工精修的对比、提示词迭代过程、以及最终达到商用水准的成品；纯AI生成图堆砌是大忌。",
       "preparationChecklist": [
         "熟练掌握1-2款AI生成工具",
@@ -2461,11 +2467,14 @@
         "了解版权和商用边界",
         "关注该方向的最新工具动态"
       ],
-      "sourceNote": "信息整理自公开招聘信息（日常实习岗（2026届）），仅供学习参考；岗位状态可能已变化，请以企业官方渠道为准",
-      "sourceName": "公开招聘信息",
+      "sourceNote": "公开招聘页面最近检查于 2026-08-13。",
+      "sourceName": "国家大学生就业服务平台",
       "publishedDate": "2026-07-23",
       "deadline": null,
       "sourceUrl": "https://www.ncss.cn/student/m/jobs/6RR5LLirAZT1JKbwttXJ2c/detail.html",
+      "sourceCheckedAt": "2026-08-13",
+      "publicVisible": true,
+      "featured": true,
       "cities": [
         "上海"
       ],

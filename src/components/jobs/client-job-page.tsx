@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { Bookmark, ChevronDown, SlidersHorizontal } from "lucide-react";
 import { JobCard } from "@/components/jobs/job-card";
 import { getJobCities } from "@/lib/job-presentation";
-import type { Job, JobDirection, JobVerificationStatus } from "@/lib/types";
+import { readSavedJobs, SAVED_JOBS_EVENT } from "@/lib/saved-jobs";
+import type { Job, JobDirection } from "@/lib/types";
 
 const directionOptions: { key: "all" | JobDirection; label: string }[] = [
   { key: "all", label: "全部" },
@@ -20,15 +22,6 @@ const typeOptions = [
   { key: "internship", label: "实习" },
   { key: "campus", label: "校招" },
   { key: "full-time", label: "全职" },
-];
-
-const statusOptions: { key: "all" | JobVerificationStatus; label: string }[] = [
-  { key: "all", label: "全部" },
-  { key: "verified-active", label: "已核验在招" },
-  { key: "needs-review", label: "待复核" },
-  { key: "needs-source", label: "待补出处" },
-  { key: "expired", label: "已截止" },
-  { key: "reference", label: "历史参考" },
 ];
 
 const difficultyOptions = ["全部", "入门", "中等", "中高", "高级"];
@@ -68,7 +61,9 @@ export function ClientJobPage({ jobs }: { jobs: Job[] }) {
   const [activeType, setActiveType] = useState("all");
   const [activeDifficulty, setActiveDifficulty] = useState("all");
   const [activeCity, setActiveCity] = useState("all");
-  const [activeStatus, setActiveStatus] = useState<"all" | JobVerificationStatus>("all");
+  const [savedOnly, setSavedOnly] = useState(false);
+  const [savedJobs, setSavedJobs] = useState<Set<string>>(new Set());
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -78,25 +73,45 @@ export function ClientJobPage({ jobs }: { jobs: Job[] }) {
     return () => window.clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const sync = () => setSavedJobs(readSavedJobs());
+    const timer = window.setTimeout(sync, 0);
+    window.addEventListener("storage", sync);
+    window.addEventListener(SAVED_JOBS_EVENT, sync);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("storage", sync);
+      window.removeEventListener(SAVED_JOBS_EVENT, sync);
+    };
+  }, []);
+
   const cities = useMemo(() => cityOptions(jobs), [jobs]);
+  const activeFilterCount = [
+    activeDirection !== "all",
+    activeType !== "all",
+    activeDifficulty !== "all",
+    activeCity !== "all",
+    savedOnly,
+  ].filter(Boolean).length;
   const filtered = useMemo(() => jobs.filter((job) => {
     if (activeDirection !== "all" && job.direction !== activeDirection) return false;
     if (activeType !== "all" && job.jobType !== activeType) return false;
     if (activeDifficulty !== "all" && job.difficulty !== activeDifficulty) return false;
     if (activeCity !== "all" && !getJobCities(job).includes(activeCity)) return false;
-    if (activeStatus !== "all" && job.verificationStatus !== activeStatus) return false;
+    if (savedOnly && !savedJobs.has(job.slug)) return false;
     if (!search.trim()) return true;
     const term = search.toLowerCase();
     return [job.title, job.companyName, job.city, job.focusArea || "", ...job.skills, ...job.tools]
       .some((value) => value.toLowerCase().includes(term));
-  }), [jobs, activeDirection, activeType, activeDifficulty, activeCity, activeStatus, search]);
+  }), [jobs, activeDirection, activeType, activeDifficulty, activeCity, savedOnly, savedJobs, search]);
 
   const reset = () => {
     setActiveDirection("all");
     setActiveType("all");
     setActiveDifficulty("all");
     setActiveCity("all");
-    setActiveStatus("all");
+    setSavedOnly(false);
+    setFiltersOpen(false);
     setSearch("");
   };
 
@@ -116,11 +131,31 @@ export function ClientJobPage({ jobs }: { jobs: Job[] }) {
         <button className="btn btn-light" type="button" onClick={reset}>重置筛选</button>
       </div>
 
+      <button
+        className="mobile-filter-toggle"
+        type="button"
+        aria-expanded={filtersOpen}
+        aria-controls="jobFilters"
+        onClick={() => setFiltersOpen((value) => !value)}
+      >
+        <SlidersHorizontal size={16} aria-hidden="true" />
+        <span>筛选条件{activeFilterCount ? `（${activeFilterCount}）` : ""}</span>
+        <ChevronDown className={filtersOpen ? "is-open" : ""} size={16} aria-hidden="true" />
+      </button>
+
       <div className="jobs-layout">
-        <aside className="filter-panel" aria-label="岗位筛选">
+        <aside id="jobFilters" className={`filter-panel ${filtersOpen ? "mobile-open" : ""}`} aria-label="岗位筛选">
           <div className="filter-group">
-            <h3>核验状态</h3>
-            <FilterButtons options={statusOptions} value={activeStatus} onChange={setActiveStatus} />
+            <h3>我的岗位</h3>
+            <button
+              className={`chip saved-jobs-filter ${savedOnly ? "active" : ""}`}
+              type="button"
+              aria-pressed={savedOnly}
+              onClick={() => setSavedOnly((value) => !value)}
+            >
+              <Bookmark size={14} fill={savedOnly ? "currentColor" : "none"} aria-hidden="true" />
+              只看收藏（{savedJobs.size}）
+            </button>
           </div>
           <div className="filter-group">
             <h3>设计方向</h3>
@@ -150,15 +185,17 @@ export function ClientJobPage({ jobs }: { jobs: Job[] }) {
 
         <div>
           <div className="result-bar">
-            <p id="resultCount" aria-live="polite">找到 {filtered.length} 条岗位情报</p>
-            <p>进入详情可先看公开 JD 信息，再看学生版翻译。</p>
+            <p id="resultCount" aria-live="polite">找到 {filtered.length} 条可查岗位</p>
+            <p>可查看招聘原文、学生解读和作品集准备建议。</p>
           </div>
           {filtered.length ? (
             <div className="job-list">
               {filtered.map((job) => <JobCard key={job.slug} job={job} />)}
             </div>
           ) : (
-            <div className="empty show"><p>暂无符合条件的岗位情报，请调整筛选条件。</p></div>
+            <div className="empty show">
+              <p>{savedOnly && savedJobs.size === 0 ? "还没有收藏岗位，点击岗位卡片上的书签即可加入。" : "暂无符合条件的岗位，请调整筛选条件。"}</p>
+            </div>
           )}
         </div>
       </div>

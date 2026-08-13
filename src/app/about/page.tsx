@@ -24,7 +24,7 @@ export default function AboutPage() {
             <h1>关于设计星图</h1>
             <p>帮设计学生看懂就业市场，找到职业坐标。</p>
           </div>
-          <span className="tag purple">内容型项目</span>
+          <span className="tag purple">面向设计学生</span>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
               </p>
               <p className="mt-3">在这里，你可以：</p>
               <ul className="fit-list">
-                <li>浏览设计岗位公开信息样本，理解企业常见能力要求</li>
+                <li>浏览可追溯的设计岗位，理解企业常见能力要求</li>
                 <li>查看公司雷达，找到适合自己发展的公司</li>
                 <li>学习能力地图，规划自己的学习路径</li>
                 <li>获取求职资料，包括简历模板、面试指南等</li>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </article>
 
             {/* 重要声明 */}
-            <article className="detail-card" id="data-policy">
+            <article className="detail-card" id="service-boundary">
               <h2>重要声明</h2>
               <div className="warning-card">
                 <strong>设计星图不是招聘平台。</strong>
@@ -64,13 +64,13 @@ export default function AboutPage() {
               </div>
             </article>
 
-            <article className="detail-card">
-              <h2>数据核验口径</h2>
+            <article className="detail-card" id="data-policy">
+              <h2>数据来源与更新</h2>
               <ul className="clean-list">
-                <li>“已核验在招”：同时包含可访问的公开出处、可核对的 JD 内容和最近核验日期。</li>
-                <li>“待复核”：已有公开出处，但尚未完成最新一轮人工核验。</li>
-                <li>“待补出处”：只有整理记录，尚未补齐可直接追溯的公开页面。</li>
-                <li>“已截止 / 历史参考”：只用于理解岗位要求，不表示企业当前正在招聘。</li>
+                <li>公开岗位都提供招聘原文入口，方便你核对完整职责、要求与投递方式。</li>
+                <li>页面上的更新日期表示我们最近一次检查公开来源的时间。</li>
+                <li>公开来源失效、岗位明确截止或信息无法对应时，该岗位会从前台下架。</li>
+                <li>学生版翻译和作品集建议用于辅助理解，不替代企业发布的招聘原文。</li>
               </ul>
             </article>
 

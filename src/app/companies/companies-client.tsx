@@ -76,7 +76,7 @@ export default function CompaniesClient({ companies }: { companies: Company[] })
           <div>
             <Link href="/" className="breadcrumb">首页 / 公司雷达</Link>
             <h1>公司雷达</h1>
-            <p>从公开岗位样本整理公司方向、关注理由和作品集建议；是否在招请以企业官方渠道为准。</p>
+            <p>按公司类型、设计方向和城市筛选，了解岗位特点、关注渠道和作品集建议。</p>
           </div>
           <span className="tag teal">{companies.length} 家公司</span>
         </div>
