@@ -1,0 +1,137 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // v3.0 设计星图主色系（对标 review 版 CSS 变量）
+        purple: {
+          DEFAULT: "#6b5cff",
+          soft: "#f0eeff",
+          50: "#f0eeff",
+          100: "#e0dffe",
+          200: "#c7d2fe",
+          300: "#a5b4fc",
+          400: "#818cf8",
+          500: "#6b5cff",
+          600: "#5a4ce0",
+          700: "#4a3fc7",
+          800: "#3b32a0",
+          900: "#2f287d",
+        },
+        orange: {
+          DEFAULT: "#ff7a3d",
+          soft: "#fff0e8",
+          50: "#fff0e8",
+          100: "#ffe0cc",
+          200: "#ffc9a3",
+          300: "#ffab72",
+          400: "#ff8f4d",
+          500: "#ff7a3d",
+          600: "#e5622a",
+          700: "#c44a1f",
+          800: "#9e3919",
+          900: "#7f2d14",
+        },
+        teal: {
+          DEFAULT: "#16877b",
+          soft: "#e9f5f3",
+          50: "#e9f5f3",
+          100: "#cce9e4",
+          200: "#99d3c9",
+          300: "#66bdae",
+          400: "#3da892",
+          500: "#16877b",
+          600: "#127069",
+          700: "#0e5954",
+          800: "#0b4340",
+          900: "#082f2c",
+        },
+        // v2.0 主色保留（用于兼容部分组件）
+        primary: {
+          50: "#EEF2FF",
+          100: "#E0E7FF",
+          200: "#C7D2FE",
+          300: "#A5B4FC",
+          400: "#818CF8",
+          500: "#6366F1",
+          600: "#4F46E5",
+          700: "#4338CA",
+          800: "#3730A3",
+          900: "#312E81",
+        },
+        accent: {
+          50: "#FEF7EE",
+          100: "#FEDDAA",
+          400: "#FB923C",
+          500: "#F97316",
+          600: "#EA580C",
+        },
+        success: {
+          50: "#ECFDF5",
+          100: "#D1FAE5",
+          500: "#10B981",
+          600: "#059669",
+          700: "#047857",
+        },
+        // 中性色 - 暖色调
+        neutral: {
+          50: "#FAFAF8",
+          100: "#F5F5F4",
+          200: "#E8E6E1",
+          300: "#D6D3D1",
+          400: "#A8A29E",
+          500: "#78716C",
+          600: "#57534E",
+          700: "#44403C",
+          800: "#292524",
+          900: "#1C1917",
+        },
+        warning: {
+          bg: "#FEF3C7",
+          text: "#92400E",
+        },
+        danger: {
+          bg: "#FEE2E2",
+          text: "#991B1B",
+        },
+      },
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "Noto Sans SC", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        none: "0",
+        sm: "4px",
+        DEFAULT: "6px",
+        md: "6px",
+        lg: "8px",
+        xl: "1rem",
+        "2xl": "1.5rem",
+        full: "9999px",
+      },
+      fontSize: {
+        "stat": ["28px", { lineHeight: "1.2", fontWeight: "600" }],
+        "hero": ["72px", { lineHeight: "1", fontWeight: "950", letterSpacing: "0" }],
+        "section-title": ["38px", { lineHeight: "1.16", fontWeight: "950", letterSpacing: "0" }],
+        "page-title": ["56px", { lineHeight: "1.1", fontWeight: "950", letterSpacing: "0" }],
+        "detail-title": ["54px", { lineHeight: "1.12", fontWeight: "950" }],
+      },
+      boxShadow: {
+        // v3.0: 重新启用阴影（review 版风格）
+        "card": "0 24px 70px rgba(17, 17, 19, 0.08)",
+        "card-soft": "0 16px 44px rgba(17, 17, 19, 0.06)",
+        "card-hover": "0 24px 70px rgba(17, 17, 19, 0.08)",
+        "nav": "0 10px 30px rgba(17, 17, 19, 0.05)",
+        "chip": "0 10px 24px rgba(17, 17, 19, 0.06)",
+        "focus-purple": "0 18px 46px rgba(107, 92, 255, 0.12)",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
