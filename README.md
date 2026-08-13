@@ -51,4 +51,4 @@ npm run data:check
 
 ## 部署
 
-生产站点由 Vercel 关联 GitHub `main` 分支自动部署。合并前先通过本地核验；推送后再检查 Vercel 构建状态和 `https://www.shejixingtu.cn/` 线上回归。
+生产站点由 Vercel 关联 GitHub `main` 分支自动部署。`vercel.json` 固定使用 `npm ci`、`npm run build` 和 `out/` 静态输出，避免控制台旧设置绕过构建。合并前先通过本地核验；推送后再检查 Vercel 构建状态和 `https://www.shejixingtu.cn/` 线上回归。
