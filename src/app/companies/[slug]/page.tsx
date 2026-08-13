@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ExternalFormButton } from "@/components/shared/external-form-button";
 import { JobCard } from "@/components/jobs/job-card";
 import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 
 interface Props {
@@ -78,7 +79,7 @@ export default async function CompanyDetailPage({ params }: Props) {
           <div className="detail-hero-card">
             <div className="detail-hero-top">
               <span className="tag teal">{companyTypeLabels[company.type] || company.type}</span>
-              {company.featured && <span className="tag orange">重点关注</span>}
+              {company.featured && <span className="tag orange">当前有官方岗位</span>}
             </div>
             <h1>{company.name}</h1>
             <div className="hero-meta-row">
@@ -87,7 +88,15 @@ export default async function CompanyDetailPage({ params }: Props) {
                 适合方向：
                 {company.suitableDirections.map((d) => directionLabels[d] || d).join(" / ")}
               </span>
+              {company.sourceCheckedAt && <span>{company.sourceCheckedAt} 更新</span>}
             </div>
+            {company.careerUrl && (
+              <div className="detail-hero-actions">
+                <a className="btn btn-dark" href={company.careerUrl} target="_blank" rel="nofollow noopener noreferrer">
+                  打开官方招聘 <ExternalLink size={15} aria-hidden="true" />
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -98,12 +107,12 @@ export default async function CompanyDetailPage({ params }: Props) {
           {/* 左侧主内容 */}
           <div className="detail-main">
             <article className="detail-card">
-              <h2>为什么值得关注</h2>
+              <h2>当前岗位观察</h2>
               <p>{company.whyFollow}</p>
             </article>
 
             <article className="detail-card">
-              <h2>设计岗位特点</h2>
+              <h2>公开岗位呈现出的能力重点</h2>
               <p>{company.designJobFeatures}</p>
             </article>
 
@@ -126,7 +135,7 @@ export default async function CompanyDetailPage({ params }: Props) {
             {/* 该公司相关岗位 */}
             {relatedJobs.length > 0 && (
               <section className="related-section">
-                <h2>该公司相关岗位情报（{relatedJobs.length}）</h2>
+                <h2>该公司当前收录岗位（{relatedJobs.length}）</h2>
                 <div className="job-list mt-4">
                   {relatedJobs.map((job) => (
                     <JobCard key={job.slug} job={job} />
@@ -146,7 +155,7 @@ export default async function CompanyDetailPage({ params }: Props) {
             </div>
 
             <div className="side-panel">
-              <h3>关注渠道</h3>
+              <h3>招聘关注渠道</h3>
               <ul className="clean-list">
                 {company.attentionChannels.map((ch, i) => (
                   <li key={i}>{ch}</li>
@@ -155,15 +164,16 @@ export default async function CompanyDetailPage({ params }: Props) {
             </div>
 
             <div className="side-panel dark">
-              <h3>准备公司投递资料</h3>
+              <h3>按目标岗位准备投递材料</h3>
               <p>
-                通过统一表单选择公司清单、投递节奏和作品集建议。
+                先看岗位原文，再把对应能力转成作品集里的过程和结果证据。
               </p>
               <div className="side-actions">
+                <Link href="/jobs" className="btn btn-inverse w-full">查看全部岗位</Link>
                 <ExternalFormButton
                   href="https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS"
-                  label="填写表单选择资料"
-                  className="btn btn-inverse w-full"
+                  label="领取通用求职资料"
+                  className="btn btn-outline-dark w-full"
                 />
               </div>
             </div>

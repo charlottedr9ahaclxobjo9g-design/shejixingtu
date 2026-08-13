@@ -2187,6 +2187,32 @@ input:focus-visible {
   padding-top: 22px;
 }
 
+.company-card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.company-card-footer .card-cta {
+  margin-top: 0;
+}
+
+.company-source-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.company-card:hover .company-source-hint {
+  color: var(--purple);
+}
+
 .resource-summary,
 .resource-audience {
   margin-top: 14px;
@@ -2666,5 +2692,11 @@ input:focus-visible {
   .portfolio-direction-item:nth-child(even) {
     border-right: 0;
     padding: 18px 0;
+  }
+
+  .company-card-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 }

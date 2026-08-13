@@ -1,4 +1,3 @@
-import { PageContainer } from "@/components/layout/page-container";
 import { PortfolioChecklist } from "@/components/portfolio/portfolio-checklist";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   return (
-    <PageContainer>
+    <div>
       {/* 页面英雄 */}
       <div className="page-hero">
         <div className="shell page-hero-inner">
@@ -194,6 +193,6 @@ export default function PortfolioPage() {
           </aside>
         </div>
       </section>
-    </PageContainer>
+    </div>
   );
 }

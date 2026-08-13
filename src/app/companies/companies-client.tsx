@@ -6,13 +6,9 @@ import type { Company, JobDirection } from "@/lib/types";
 
 const typeOptions: { value: string; label: string }[] = [
   { value: "all", label: "全部" },
-  { value: "internet", label: "互联网" },
   { value: "smart-hardware", label: "智能硬件" },
-  { value: "consumer-brand", label: "消费品牌" },
-  { value: "design-agency", label: "设计工作室" },
-  { value: "design-consulting", label: "设计咨询" },
-  { value: "ecommerce", label: "电商" },
-  { value: "game", label: "游戏" },
+  { value: "manufacturing", label: "制造业" },
+  { value: "culture-creativity", label: "内容创意" },
 ];
 
 const directionOptions: { value: "all" | JobDirection; label: string }[] = [
@@ -75,10 +71,10 @@ export default function CompaniesClient({ companies }: { companies: Company[] })
         <div className="shell page-hero-inner">
           <div>
             <Link href="/" className="breadcrumb">首页 / 公司雷达</Link>
-            <h1>公司雷达</h1>
-            <p>按公司类型、设计方向和城市筛选，了解岗位特点、关注渠道和作品集建议。</p>
+            <h1>公司与岗位观察</h1>
+            <p>只展示已有可追溯公开岗位的公司，按方向和城市找到值得继续研究的目标。</p>
           </div>
-          <span className="tag teal">{companies.length} 家公司</span>
+          <span className="tag teal">{companies.length} 家有来源公司</span>
         </div>
       </div>
 
@@ -91,7 +87,7 @@ export default function CompaniesClient({ companies }: { companies: Company[] })
               <input
                 id="companySearch"
                 type="search"
-                placeholder="搜索公司、城市、类型"
+                placeholder="搜索公司、城市或岗位特点"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
@@ -173,18 +169,11 @@ export default function CompaniesClient({ companies }: { companies: Company[] })
       {/* 底部 CTA */}
       <section className="section soft">
         <div className="shell text-center">
-          <h2 className="section-title mb-3">继续准备目标公司投递材料</h2>
+          <h2 className="section-title mb-3">从公司观察进入具体岗位准备</h2>
           <p className="text-[var(--muted)] mb-6 max-w-lg mx-auto">
-            通过统一表单选择公司投递指南、面试准备和作品集资料。
+            先查看对应岗位原文和学生版解读，再按目标方向整理作品集证据。
           </p>
-          <a
-            href="https://my.feishu.cn/share/base/form/shrcnI7IY8GJMtFU5N4AO7aMEyS"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-dark"
-          >
-            填写表单选择资料
-          </a>
+          <Link href="/jobs" className="btn btn-dark">查看全部岗位</Link>
         </div>
       </section>
     </div>

@@ -87,6 +87,8 @@ export interface Company {
   attentionChannels: string[]; // deliverables 用 attentionChannels
   portfolioAdvice: string;
   interviewNotes?: string[];
+  careerUrl?: string;
+  sourceCheckedAt?: string;
   featured?: boolean;
 }
 

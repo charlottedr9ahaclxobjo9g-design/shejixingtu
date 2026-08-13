@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import { Company, CompaniesDataWrapper } from '@/lib/types';
 
-const DATA_PATH = join(process.cwd(), 'public', 'data', 'companies.json');
+const DATA_PATH = join(process.cwd(), 'data', 'companies.json');
 
 function readCompaniesData(): Company[] {
   try {

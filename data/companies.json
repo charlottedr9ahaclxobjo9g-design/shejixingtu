@@ -1,0 +1,156 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-08-13",
+  "description": "基于当前公开岗位整理的公司观察，仅展示有可追溯岗位来源的公司。",
+  "companies": [
+    {
+      "id": "company-001",
+      "slug": "oppo",
+      "name": "OPPO",
+      "type": "smart-hardware",
+      "city": "深圳 / 东莞",
+      "suitableDirections": [
+        "industrial-design",
+        "ui-ux",
+        "visual-brand"
+      ],
+      "suitableStudents": "希望进入消费电子与操作系统设计团队，并能在作品集中证明研究、创意、规范和落地协作的学生。",
+      "whyFollow": "当前公开的2027届设计岗位覆盖ID、CMF、交互、动效和营销视觉，能够同时观察硬件造型、ColorOS体验与品牌传播三类设计工作。",
+      "designJobFeatures": "公开岗位普遍把AI工具纳入工作链路，但同时强调造型、交互逻辑、设计规范、材料工艺和跨团队交付等基础能力。",
+      "attentionChannels": [
+        "OPPO校园招聘官网",
+        "微信公众号：OPPO招聘"
+      ],
+      "portfolioAdvice": "先按具体岗位方向选择项目，不要用同一份作品集覆盖所有设计岗。ID与CMF突出工艺和落地；交互与动效突出流程、状态和验收；营销视觉突出系统延展。",
+      "interviewNotes": [
+        "准备说明AI工具在项目中的具体作用和人工判断边界。",
+        "每个核心项目都要能讲清一次设计取舍和一次落地协作。"
+      ],
+      "careerUrl": "https://careers.oppo.com/campus",
+      "sourceCheckedAt": "2026-08-13",
+      "featured": true
+    },
+    {
+      "id": "company-002",
+      "slug": "haier-zhijia",
+      "name": "海尔智家",
+      "type": "smart-hardware",
+      "city": "青岛",
+      "suitableDirections": [
+        "industrial-design",
+        "ui-ux",
+        "product-design"
+      ],
+      "suitableStudents": "关注智能家居、耐用消费品和多端物联网体验，愿意把用户研究与工程协同放进作品集的2027届学生。",
+      "whyFollow": "当前官方2027届岗位包含产品设计师和UI设计师，分别对应家居产品创新、CMF与结构流程，以及移动端、Web和智能屏的多端体验。",
+      "designJobFeatures": "岗位强调市场与用户洞察、组件库、多端一致性、建模渲染、开发流程和跨部门推进，适合观察软硬件体验如何在同一产品生态中协同。",
+      "attentionChannels": [
+        "海尔官方招聘网站",
+        "海尔智家校园招聘"
+      ],
+      "portfolioAdvice": "产品设计项目要补足市场、用户、结构和CMF证据；UI项目要展示手机、Web或智能屏之间的任务闭环、组件复用和真实内容。",
+      "interviewNotes": [
+        "当前岗位明确面向2027届，并要求英语四级。",
+        "准备一个能体现跨部门推进或开发验收的项目案例。"
+      ],
+      "careerUrl": "https://maker.haier.net/client/campusmobile/index",
+      "sourceCheckedAt": "2026-08-13",
+      "featured": true
+    },
+    {
+      "id": "company-003",
+      "slug": "hikvision",
+      "name": "海康威视",
+      "type": "smart-hardware",
+      "city": "杭州",
+      "suitableDirections": [
+        "industrial-design",
+        "product-design"
+      ],
+      "suitableStudents": "希望参与视频物联、智能感知、专业设备或工业产品，并能提供完整工业设计作品集和稳定实习时间的学生。",
+      "whyFollow": "当前官方页面有工业设计实习岗位，覆盖视频物联、便携仪器、科学仪器和工业设备，也包含海康睿影的完整产品设计实习链路。",
+      "designJobFeatures": "公开岗位从竞品与用户需求、草图与三维表达，一直延伸到CMF、结构、加工制造、打样试产和AI辅助方案迭代。",
+      "attentionChannels": [
+        "海康威视招聘官网",
+        "海康威视学生招聘"
+      ],
+      "portfolioAdvice": "优先展示专业设备或智能硬件项目，写清操作场景、人机尺寸、结构分件、材质工艺和打样问题；AI生成内容必须说明筛选和修正过程。",
+      "interviewNotes": [
+        "部分岗位要求至少3个月、每周4天，或连续实习6个月。",
+        "投递前确认作品集链接可访问，并在简历中写清到岗时间。"
+      ],
+      "careerUrl": "https://talent.hikvision.com/",
+      "sourceCheckedAt": "2026-08-13",
+      "featured": true
+    },
+    {
+      "id": "company-004",
+      "slug": "hui-chuan-ji-shu",
+      "name": "汇川技术",
+      "type": "manufacturing",
+      "city": "苏州",
+      "suitableDirections": [
+        "industrial-design",
+        "product-design"
+      ],
+      "suitableStudents": "希望进入工业自动化或硬件产品方向，并具备造型、CMF和结构协同基础的学生。",
+      "whyFollow": "当前站内收录的公开岗位重点关注产品造型、CMF和结构协同，可用于理解工业技术产品对设计落地证据的要求。",
+      "designJobFeatures": "相比单纯追求外观表现，这类岗位更需要说明材料、工艺、结构可行性以及设计如何进入研发流程。",
+      "attentionChannels": [
+        "站内岗位页的招聘原文入口"
+      ],
+      "portfolioAdvice": "准备2至3个完整产品项目，至少一个项目能够看到草图、建模、CMF、结构约束和打样或验证过程。",
+      "interviewNotes": [
+        "重点准备结构与外观发生冲突时的设计取舍。"
+      ],
+      "sourceCheckedAt": "2026-08-13",
+      "featured": false
+    },
+    {
+      "id": "company-005",
+      "slug": "li-xiang-qi-che",
+      "name": "理想汽车",
+      "type": "manufacturing",
+      "city": "北京",
+      "suitableDirections": [
+        "ui-ux",
+        "product-design"
+      ],
+      "suitableStudents": "关注智能座舱、汽车HMI与复杂多端体验，能用流程、组件和验证证据说明设计决策的学生。",
+      "whyFollow": "当前站内收录的公开UX岗位可用于观察汽车与出行场景对交互、界面、设计规范和跨团队交付的要求。",
+      "designJobFeatures": "车载体验通常同时涉及驾驶安全、多人多屏、状态反馈和软硬件协同，作品集需要比普通App项目呈现更多边界条件。",
+      "attentionChannels": [
+        "站内岗位页的招聘原文入口"
+      ],
+      "portfolioAdvice": "选择一个多端或复杂交互项目，展示关键任务、异常状态、组件规范和开发验收；如果没有车载项目，也要说明现有项目如何迁移到座舱场景。",
+      "interviewNotes": [
+        "准备讲清高频任务、驾驶干扰和信息层级之间的取舍。"
+      ],
+      "sourceCheckedAt": "2026-08-13",
+      "featured": false
+    },
+    {
+      "id": "company-006",
+      "slug": "shang-hai-ji-mei-ying-ye-gu-fe",
+      "name": "上海基美影业",
+      "type": "culture-creativity",
+      "city": "上海",
+      "suitableDirections": [
+        "aigc-design",
+        "visual-brand"
+      ],
+      "suitableStudents": "希望把AIGC用于影视创意制作，并能证明提示词迭代、方案筛选和人工精修能力的学生。",
+      "whyFollow": "当前站内收录的公开实习岗位聚焦AIGC影视创意制作，适合观察生成工具如何进入真实内容生产，而不是只停留在单张图展示。",
+      "designJobFeatures": "岗位准备重点是可控工作流、审美筛选、后期修正和版权意识，最终成果需要达到可用于传播或制作的完整度。",
+      "attentionChannels": [
+        "站内岗位页的招聘原文入口"
+      ],
+      "portfolioAdvice": "用同一主题展示提示词、参考控制、多个候选、筛选理由和人工精修前后对比；删除无法说明个人贡献的纯生成图堆砌。",
+      "interviewNotes": [
+        "准备说明素材来源、版权边界和个人完成的具体环节。"
+      ],
+      "sourceCheckedAt": "2026-08-13",
+      "featured": false
+    }
+  ]
+}

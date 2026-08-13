@@ -20,9 +20,19 @@ function newestFirst(left: Job, right: Job): number {
   return rightDate.localeCompare(leftDate);
 }
 
+function toPublicJob(job: Job): Job {
+  const publicJob = { ...job };
+  delete publicJob.publicVisible;
+  delete publicJob.verificationStatus;
+  delete publicJob.verificationNote;
+
+  return publicJob;
+}
+
 export function getJobs(): Job[] {
   return readJobsData()
     .filter((job) => job.publicVisible && job.sourceUrl && job.sourceCheckedAt)
+    .map(toPublicJob)
     .sort(newestFirst);
 }
 
